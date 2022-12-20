@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "8002:8000"
+    environment:
+      - "SERVER_URI=http://127.0.0.1:8002"
