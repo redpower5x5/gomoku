@@ -204,7 +204,7 @@ void GoBanAINegamax::searchMovesOrdered(const char *gs, int player, std::vector<
     // Clear and previous result
     result->clear();
 
-    // Find an extent to reduce unnecessary calls to RenjuAIUtils::remoteCell
+    // Find an extent to reduce unnecessary calls to GoBanAIUtils::remoteCell
     int min_r = INT_MAX, min_c = INT_MAX, max_r = INT_MIN, max_c = INT_MIN;
     for (int r = 0; r < g_board_size; ++r) {
         for (int c = 0; c < g_board_size; ++c) {
